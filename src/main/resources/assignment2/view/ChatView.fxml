@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.view.ChatViewController">
+   <children>
+      <ListView fx:id="messages" layoutX="14.0" layoutY="50.0" prefHeight="172.0" prefWidth="472.0" />
+      <TextField fx:id="text" layoutX="14.0" layoutY="237.0" prefHeight="42.0" prefWidth="340.0" promptText="Text...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="371.0" layoutY="228.0" mnemonicParsing="false" onAction="#sendButtonPressed" prefHeight="30.0" prefWidth="100.0" text="Send">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="371.0" layoutY="264.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="30.0" prefWidth="100.0" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" alignment="BASELINE_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="472.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
